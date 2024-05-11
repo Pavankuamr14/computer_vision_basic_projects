@@ -1,26 +1,26 @@
-Title: Drone Control and Monitoring with Computer Vision (CV)
+#Title: Drone Control and Monitoring with Computer Vision (CV)
 
-Introduction:
+#Introduction:
 Welcome to the repository for our exciting drone control and monitoring project using Computer Vision (CV)! In this project, we utilize CV techniques to control drones via hand gestures and monitor various aspects such as speed and hand/plam movements. This README will guide you through the project structure and provide essential information for understanding and replicating our work.
 
-Project Overview:
+#Project's Overview:
 Our project focuses on leveraging CV algorithms to interact with drones in innovative ways. Here's a brief overview of the key components:
 
-Hand Gesture Control:
+#Hand Gesture Control:
 
 We've developed a system that allows users to control the drone using hand gestures. By analyzing hand movements captured by a camera, the drone can be directed to perform specific actions.
-Speed Calculation:
+#Speed Calculation:
 
 One of the functionalities includes calculating the speed of a person or object. This data is then used to adjust the speed of the drone accordingly, enhancing its tracking capabilities.
-Hand and Palm Extraction:
+#Hand and Palm Extraction:
 
 We've implemented algorithms to extract values related to hand and palm positions. This information can be utilized for various purposes such as object detection, gesture recognition, etc.
-Basic Computer Vision Projects:
+#Basic Computer Vision Projects:
 
 Additionally, we've included some basic CV projects like face detection to showcase the versatility and potential applications of CV technology.
 
 
-Getting Started:
+#Getting Started:
 To replicate our project or integrate it into your own system, follow these steps:
 
 Clone the repository to your local machine.
