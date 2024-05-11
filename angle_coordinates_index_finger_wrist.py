@@ -1,6 +1,5 @@
 import math
 import cv2
-import cvzone
 from cvzone.HandTrackingModule import HandDetector
 
 cap = cv2.VideoCapture(0)
@@ -53,13 +52,22 @@ while True:
     if hands:
         myHand = hands[0]  # Assuming you are interested in the first detected hand
         lmList = myHand['lmList']
-        pointIndex = lmList[8][0:2]
+        pointIndex = lmList[8][0:2]  # Get the coordinates of the index finger tip
+        pointWrist = lmList[0][0:2]  # Get the coordinates of the wrist
         fingers = detector.fingersUp(myHand)  # Pass the hand explicitly to fingersUp method
 
         game.indexFingerExtended = fingers[1] == 1  # Check if the index finger is extended
         game.indexFingerFound = True  # Set indexFingerFound to True when the index finger is detected
 
         img = game.update(img, pointIndex)
+
+        # Print the coordinates of the index finger tip
+        print("Index Finger Tip Coordinates:", pointIndex)
+
+        # Calculate the angle between the index finger tip and the wrist
+        angle = math.degrees(math.atan2(pointIndex[1] - pointWrist[1], pointIndex[0] - pointWrist[0]))
+        print("Angle between Index Finger Tip and Wrist:", angle)
+
     else:
         game.indexFingerFound = False  # Set indexFingerFound to False when the index finger is not detected
 
