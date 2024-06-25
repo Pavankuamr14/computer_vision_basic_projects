@@ -1,4 +1,4 @@
-#Title: Drone Control and Monitoring with Computer Vision (CV)
+**Title: Drone Control and Monitoring with Computer Vision (CV)
 
 #Introduction:
 Welcome to the repository for our exciting drone control and monitoring project using Computer Vision (CV)! In this project, we utilize CV techniques to control drones via hand gestures and monitor various aspects such as speed and hand/plam movements. This README will guide you through the project structure and provide essential information for understanding and replicating our work.
